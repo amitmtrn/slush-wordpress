@@ -1,0 +1,13 @@
+/*
+Theme Name: <%= name %>
+Theme URI: <%= url %>
+Author: <%= author %>
+Author URI: <%= authorUrl %>
+Description: <%= description %>
+Version: 0.1.0
+License: <%= license %>
+License URI: <%= licenseUrl %>
+Tags: <%= tags %>
+Text Domain: <%= name %>
+
+*/
