@@ -1,5 +1,10 @@
 # slush wordpress
 
+[![NPM version](https://img.shields.io/npm/v/slush-wordpress-theme.svg)](https://www.npmjs.com/package/slush-wordpress-theme)
+[![Download stats](https://img.shields.io/npm/dm/slush-wordpress-theme.svg)](https://www.npmjs.com/package/slush-wordpress-theme)
+
+[![NPM stats](https://nodei.co/npm/slush-wordpress-theme.svg?downloadRank=true&downloads=true)](https://www.npmjs.org/package/slush-wordpress-theme)
+
 ## installation
 
 ```
