@@ -1,6 +1,6 @@
 {
   "name": "slush-wordpress-theme",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "a wordpress theme slush generator",
   "main": "slushfile.js",
   "scripts": {
