@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-template": "^3.0.0",
     "inquirer": "^0.8.5",

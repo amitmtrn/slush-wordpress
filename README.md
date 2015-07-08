@@ -20,5 +20,11 @@ slush wordpress-theme
 ### create custom page template
 
 ```
-slush wordpress-theme:custom-page
+slush wordpress-theme:custom-page custom-page-name
+```
+
+### create custom post type
+
+```
+slush wordpress-theme:post-type
 ```
