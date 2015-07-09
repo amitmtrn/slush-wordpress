@@ -73,6 +73,37 @@ gulp.task('post-type', function(done) { // build the package
   });
 });
 
+gulp.task('enqueue-script', function(done) { // build the package
+
+  inquirer.prompt([
+    {type: 'input', name: 'name', message: 'What is the name of the script? (don\'t use spaces)', default: gulp.args ? gulp.args[0] : ''},
+    {type: 'input', name: 'url', message: 'the url of the script', default: ''},
+    {type: 'confirm', name: 'footer', message: 'do you want the script in the footer', default: true},
+    {type: 'input', name: 'version', message: 'version?', default: '0.1.0'},
+    {type: 'confirm', name: 'deregister', message: 'deregister', default: false},
+    {type: 'confirm', name: 'enqueue', message: 'enqueue', default: true},
+    {type: 'input', name: 'dependecies', message: 'dependecies (seperate with comma)', default: '\'jquery\''}
+    ],
+
+  function(answers) { // get the answers
+    var templateAnswers = answers;
+    templateAnswers.noSpaceName = answers.name.replace(/\-/g, '_');
+    templateAnswers.localScript = '';
+
+    if (answers.url.indexOf('http://') === -1) {
+      templateAnswers.localScript = 'get_template_directory_uri().';
+    }
+
+    gulp.src(['./functions.php', __dirname + '/templates/functions/enqueue-script.php'])
+    .pipe(template(templateAnswers))
+    .pipe(concat('functions.php'))
+    .pipe(gulp.dest('./'))
+    .on('finish', function() {
+      done();
+    });
+  });
+});
+
 function getNameProposal() {
   var path = require('path');
   try {

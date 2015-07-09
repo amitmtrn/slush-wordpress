@@ -32,4 +32,12 @@ slush wordpress-theme:custom-page custom-page-name
 
 ```
 slush wordpress-theme:post-type
+// add the code to the functions.php make sure you don't close the php tag.
+```
+
+### enqueue script
+
+```
+slush wordpress-theme:enqueue-script some-script
+// add the code to the functions.php make sure you don't close the php tag.
 ```
