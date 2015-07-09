@@ -1,5 +1,7 @@
 # slush wordpress
 
+[![Gitter](https://badges.gitter.im/amitmtrn/slush-wordpress.svg)](https://gitter.im/amitmtrn/slush-slush)
+
 [![NPM version](https://img.shields.io/npm/v/slush-wordpress-theme.svg)](https://www.npmjs.com/package/slush-wordpress-theme)
 [![Download stats](https://img.shields.io/npm/dm/slush-wordpress-theme.svg)](https://www.npmjs.com/package/slush-wordpress-theme)
 
